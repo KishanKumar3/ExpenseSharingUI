@@ -1,0 +1,19 @@
+<div *ngFor="let balance of balances" class="balance-container">
+  <h3 class="balance-header">{{ balance.user.name }}'s Balances</h3>
+  <div *ngIf="balance.owes.length > 0" class="balance-section">
+    <h4 class="balance-subheader">Owes</h4>
+    <ul class="balance-list">
+      <li *ngFor="let owes of balance.owes" class="balance-item">
+        {{ owes.to }}: {{ owes.amount | currency:'INR':'symbol-narrow' }}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="balance.owed.length > 0" class="balance-section">
+    <h4 class="balance-subheader">Owed</h4>
+    <ul class="balance-list">
+      <li *ngFor="let owed of balance.owed" class="balance-item">
+        {{ owed.from }}: {{ owed.amount | currency:'INR':'symbol-narrow' }}
+      </li>
+    </ul>
+  </div>
+</div>

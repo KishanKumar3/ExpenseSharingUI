@@ -1,0 +1,41 @@
+.home-page {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #b3e5fc, #e1f5fe);
+    min-height: 100vh;
+  }
+  
+  .facts-section {
+    margin: 20px 0;
+  }
+  
+  .facts-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .facts-section li {
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .facts-section li:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+  }
+  
+  
+
+
+  .login-button-container {
+    margin-top: 30px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  

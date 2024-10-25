@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <span>Expense Sharing Application</span>
+  <div class="spacer"></div>
+  <ng-container *ngIf="isLoggedIn; else loginTemplate">
+
+    <ng-container *ngIf="isAdmin">
+      <button mat-button routerLink="/all-expenses">Expenses</button>
+      <button mat-button routerLink="/all-users">Users</button>
+    
+    </ng-container>
+    <button mat-button routerLink="/manage-groups">Groups</button>
+      
+    <button mat-button [matMenuTriggerFor]="menu" (click)="refreshUserDetails()" >{{ userName }}</button>
+
+
+    <mat-menu #menu="matMenu">
+      <button  mat-menu-item  (click)="balance()">Balance: {{ userBalance }}</button>
+
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+  </ng-container>
+  <ng-template #loginTemplate>
+    <a mat-button routerLink="/login">Login</a>
+  </ng-template>
+</mat-toolbar>

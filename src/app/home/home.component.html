@@ -1,0 +1,15 @@
+<div class="home-page">
+  <h1>Welcome to Expense Sharing Application</h1>
+
+  <div class="facts-section">
+    <ul>
+      <li *ngFor="let fact of facts">{{ fact }}</li>
+    </ul>
+  </div>
+
+
+
+  <div class="login-button-container">
+    <button mat-button color="primary" routerLink="/login">Login</button>
+  </div>
+</div>

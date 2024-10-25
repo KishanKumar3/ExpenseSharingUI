@@ -1,0 +1,29 @@
+.mat-dialog-title {
+    text-align: center; /* Center-align the dialog title */
+    margin-top: 20px; /* Add margin to the top of the dialog title */
+  }
+  
+  .expenses-table {
+    margin-top: 10px; /* Add margin above the table */
+    margin-bottom: 20px; /* Add margin below the table */
+  }
+  
+  .expenses-table .settle-button {
+    border: 2px solid #007bff; /* Blue border for Settle button */
+    background-color: #ffffff; /* Background color */
+    color: #007bff; /* Text color */
+    padding: 8px 16px; /* Padding */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .expenses-table .settle-button:hover {
+    background-color: #007bff; /* Hover background color */
+    color: #ffffff; /* Hover text color */
+  }
+  
+  .mat-dialog-actions {
+    justify-content: center; /* Center-align actions */
+    margin-top: 10px; /* Add margin to the top of dialog actions */
+  }
+  
